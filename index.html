@@ -1,113 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-       <title>MMA Challenge</title>
-       <style>
-            *{
-                margin: 10px;
-                font-family:Georgia, 'Times New Roman', Times, serif;
-            }
-
-            body{
-                background-color:rgb(220, 220, 220)
-            }
-
-            h1{
-                text-align: center;
-                color:brown;
-            }
-            .firstcontainer{
-                margin-left: 400px;  
-            }
-            
-            .imginitial{
-                padding: 0px;
-                max-width: 400px;
-                border: 3px solid black;
-            }
-
-            .description{
-                color:rgb(49, 49, 49);
-                text-align: justify;
-                font-size: 16px;
-                line-height: 20px;
-            }
-
-            h3{
-                text-align: center;
-                color:rgb(110, 29, 29);  
-            }
-
-            .list{
-                margin-left: 350px;
-                width: 800px;
-                border: 2px solid black;                
-            }
-            .textlist{
-                color: rgb(51, 13, 13);
-                text-align: justify;
-                font-size: 16px;
-                line-height: 20px;
-            }
-
-            .linkbox{
-                text-align: center;                
-            }
-            
-            .link{
-                color: rgb(25, 40, 105);
-                text-decoration: none;
-                padding: 0px 10px;
-                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-            }
-
-            .link:hover{
-                background-color: rgb(10, 10, 10);
-                color: white;
-            }
-
-            footer{
-                background-color: rgba(169, 169, 169, 0.719);
-                padding: 0px;
-                margin: 0px;
-            }
-            .textfooter{
-                color: rgb(51, 13, 13);
-                text-align: center;
-                margin-top: 50px;
-                padding-top: 10px;
-                font-size: 20px;
-                line-height: 20px;
-            }
-            .finalcontainer{
-                margin-left: 680px;
-            }
-
-            .video{
-                position: relative;
-                text-align: center;
-                padding-bottom: 100px;
-                width: 100%;
-                height: 100%;
-            }
-            
-
-
-
-       </style>
+    <title>MMA Challenge</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <header>
-        <h1 id="titulo"> <span>Introducción a las Artes Marciales Mixtas (MMA)</span></h1>
+        <h1 class="title">Introducción a las Artes Marciales Mixtas <span>(MMA)</span></h1>
     </header>
-
     <section>
-        <div class="firstcontainer">
+        <div class="container">
             <img src="img/octagono-mma.jpg" class="imginitial" width="300" height="180"> 
             <img src="img/izzy.jfif" class="imginitial" width="300" height="180">
         </div>
         <br>
-        <h3><span>Artes Marciales Mixtas y su Popularidad</span></h3>
+        <h3 class="subtitle">Artes Marciales Mixtas y su Popularidad</h3>
         <p class="description">
             Las Artes Marciales Mixtas (MMA) han experimentado un gran ascenso en cuanto a popularidad a nivel mundial
             en las últimas décadas. Este deporte, que combina diversas disciplinas de combate como boxeo, jiu-jitsu, 
@@ -118,40 +25,41 @@
             renombre mundial y atletas icónicos que trascienden fronteras, las Artes Marciales Mixtas no solo son un
             espectáculo deportivo, sino una manifestación de la diversidad y habilidad de los guerreros modernos.
         </p>
-
-        <h3><span>¿Qué se puede destacar de este deporte?</span></h3> <br>
-        <div class="list">
-            <ol>
-                <li value="1001"><h4>Integración de disciplinas:</h4></li>
-                    <p class="textlist">
-                       Las Artes Marciales Mixtas se destacan por su enfoque inclusivo, donde los atletas combinan habilidades
-                       de diversas disciplinas de combate, como boxeo, jiu-jitsu, muay thai, lucha libre y más. Esta integración
-                       permite a los competidores desarrollar un estilo único y versátil, adaptándose a diferentes situaciones dentro  
-                       del octágono.
-                    </p>
-            
-                <li><h4>Espectáculo y emoción:</h4></li>
-                    <p class="textlist">
-                       La MMA ha ganado popularidad gracias a su capacidad para ofrecer emocionantes y vibrantes espectáculos
-                       deportivos. Los combates suelen ser intensos y llenos de acción, con momentos de sorpresa y estrategia
-                       que mantienen a los espectadores al borde de sus asientos. La imprevisibilidad de los resultados agrega 
-                       un elemento adicional de emoción, atrayendo a una audiencia diversa.
-                    </p>
-            
-                <li><h4>Auge global y estrellas internacionales:</h4></li>
-                    <p class="textlist">
-                       La MMA ha logrado trascender fronteras, convirtiéndose en un fenómeno global. Con organizaciones líderes 
-                       como UFC (Ultimate Fighting Championship) como pioneras, el deporte ha creado estrellas internacionales
-                       que atraen a seguidores de todo el mundo. Este alcance global ha contribuido significativamente a la difusión
-                       de la cultura de las Artes Marciales Mixtas, consolidándola como una forma de entretenimiento y deporte
-                       de alto perfil en distintas culturas.
-                    </p>                           
-            </ol>
-        </div> <br>
-            
-        
+        <h3 class="subtitle">¿Qué se puede destacar de este deporte?</h3>
+        <br>
+        <ol class="container">
+            <div class="listContent">
+                <li value="1001" class="listTitle"><span>Integración de disciplinas:</span></li>
+                <p class="textlist">
+                    Las Artes Marciales Mixtas se destacan por su enfoque inclusivo, donde los atletas combinan habilidades
+                    de diversas disciplinas de combate, como boxeo, jiu-jitsu, muay thai, lucha libre y más. Esta integración
+                    permite a los competidores desarrollar un estilo único y versátil, adaptándose a diferentes situaciones dentro  
+                    del octágono.
+                </p>
+           </div>
+           <div class="listContent">
+                <li class="listTitle"><span>Espectáculo y emoción:</span></li>
+                <p class="textlist">
+                    La MMA ha ganado popularidad gracias a su capacidad para ofrecer emocionantes y vibrantes espectáculos
+                    deportivos. Los combates suelen ser intensos y llenos de acción, con momentos de sorpresa y estrategia
+                    que mantienen a los espectadores al borde de sus asientos. La imprevisibilidad de los resultados agrega 
+                    un elemento adicional de emoción, atrayendo a una audiencia diversa.
+                </p>
+            </div>
+            <div class="listContent">
+                <li class="listTitle"><span>Auge global y estrellas internacionales:</span></li>
+                <p class="textlist">
+                    La MMA ha logrado trascender fronteras, convirtiéndose en un fenómeno global. Con organizaciones líderes 
+                    como UFC (Ultimate Fighting Championship) como pioneras, el deporte ha creado estrellas internacionales
+                    que atraen a seguidores de todo el mundo. Este alcance global ha contribuido significativamente a la difusión
+                    de la cultura de las Artes Marciales Mixtas, consolidándola como una forma de entretenimiento y deporte
+                    de alto perfil en distintas culturas.
+                </p>  
+            </div>                         
+        </ol>
+        <br>   
         <article>
-            <h3><span>Combates de MMA</span></h3>
+            <h3 class="subtitle"><span>Combates de MMA</span></h3>
             <p class="description">
                 Los combates de MMA pueden darse a nivel profesional y a nivel amateur. La reglamentación cambia en ambos niveles.
                 Por ejemplo, a nivel profesional es permitido utilizar los codos para generar daño, también se permite golpear con
@@ -161,30 +69,22 @@
                 catalogado como uno de los más emblamáticas y más esperados en su momento por la afición de las MMA, llevado a cabo entre
                 Khabib Nurmagomedov vs Conor McGregor.<br>                
             </p>
-            <div class="linkbox">
-                    <a target="_blank" class="link" href="https://www.youtube.com/watch?v=xpumE4w-dBY&t=5507s">SBF X. Johan Ángel vs Yerson Cujar</a></li>
-                    <a target="_blank" class="link" href="https://www.youtube.com/watch?v=JuBBIJ7adjM">Khabib Nurmagomedov vs Conor McGregor</a></li>
-                </div>                    
-            
+            <div class="container">
+                <a target="_blank" class="link" href="https://www.youtube.com/watch?v=xpumE4w-dBY&t=5507s">SBF X. Johan Ángel vs Yerson Cujar</a></li>
+                <a target="_blank" class="link" href="https://www.youtube.com/watch?v=JuBBIJ7adjM">Khabib Nurmagomedov vs Conor McGregor</a></li>
+            </div>                    
             <br>
         </article>
-        
         <div class="video">
-            <h3><span>Ángel vs Guzmán</span></h3>
+            <h3 class="subtitle"><span>Ángel vs Guzmán</span></h3>
             <video controls src="img/VIDEO.mp4" width="200px"></video>
         </div>
     </section>
     <footer>
-        <div class="textfooter">
-            <h6>Página creada por: Johan Nicolás Pérez Ángel</h6>
-            <h6>06 de junio de 2024</h6>
-            <h5>Muchas gracias Niger</h5>          
-        </div>
-        <div class="finalcontainer">
-            <img src="img/TRIBUSPORTS.png" width="80px" height="50">
-        </div>
-        
+        <span>Página creada por: Johan Nicolás Pérez Ángel</span>
+        <span>06 de junio de 2024</span>
+        <span>Muchas gracias Niger</span>          
+        <img src="img/TRIBUSPORTS.png" width="80px" height="50">
     </footer>
-    
 </body>
 </html>
